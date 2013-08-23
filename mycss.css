@@ -1,0 +1,243 @@
+
+
+.content_form{
+		text-align: left;
+		padding-left: 50px;
+        margin-left: 103px;
+        width: 670px;
+        background-color: #C7C7C7;
+        border: 1px solid #CCCCCC;
+        padding-bottom: 10px;
+	}	
+
+.content_form label{
+    clear: both;
+    float: left;
+	font-size: 12px;
+	font-weight: bold;
+    color: #737373;
+	width: 115px;
+
+}
+
+.publisher_heading{
+	margin: 20px 0 20px 140px;
+    width: 275px !important;
+}
+
+
+.content_form input{
+    width: 300px;
+    margin-left: 10px;
+}
+
+#createAcct_heading{
+    color:#696969; 
+    font-weight:bold;
+    font-size: 18px;
+    text-shadow: 2px 2px #E5E5E5;
+    text-transform: uppercase;
+}
+
+
+.content_form .vertical_section #verticals{
+    margin-left: 10px;
+
+}
+
+#chkbox label.advtser_label, #chkbox label.publisher_label{
+    font-style: italic;
+    font-size: 10px;
+    color: #2E8B57;
+}
+
+#chkbox_option{
+    margin-left: 1px;
+    margin-top: 0px;
+}
+   
+.contact_heading{
+    font-weight: bold;
+}
+
+.content_form a{
+    font-size:12px;
+    margin-left: 140px;
+    text-decoration: none;
+    background-color: #CCCCCC;
+}
+
+input.submit{
+    width: 60px;
+    margin-left: 230px;
+    font-size: 11px;
+    border-radius: 10px;
+    background-color: #EE9A00;
+    color: #FFFFFF;
+    margin-top: 15px;
+}
+
+#addurl, #removeurl{
+    width: 55px;
+    background-color: #C7C7C7;
+    border-radius: 10px;
+}
+
+.content_form #bd_email, #dept{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.content_form #bd_email select, .content_form #dept select {
+    width: 200px;
+    margin-left: 10px;
+}
+
+
+.content_form .same_contactId span{
+    font-size:10px;
+    margin-left: -280px;
+}
+
+#bd_email span{
+    color: #CD0000;
+}
+
+/* only for firefox */
+
+@-moz-document url-prefix() {
+   .content_form .same_contactId input{
+    margin-left: -290px !important;
+    min-width: 600px !important;
+}
+}
+
+.content_form .upload #upload{
+  font-size: 12px;
+  font-family: helvetica, sans-sarif, arial;
+  font-style: italic;
+  font-weight: bold;
+  color: #616161;
+}
+
+.content_form .upload #upload_button{
+    width: 50px !important;
+    font-size:10px;
+    background-color: #BCD2EE;
+    border-radius: 10px;
+}
+
+.content_form .upload #client_note, #chkbox_option{
+    color: #CD6600;
+    font-size: 11px;
+    font-style: italic;
+}
+
+.content_form #pub_chkbox label{
+    color: #473C8B;
+}
+
+.content_form #ad_chkbox label{
+    color: #008B45;
+}
+
+.vertical_section .addvert_button, .vertical_section .remove_button{
+    position:relative;
+    top: 0px;
+    left: 10px;
+    background-color: #CD6600;
+    color: #FFFFFF;
+    font-weight: bold;
+    border-radius: 7px;
+    }
+
+.content_form .company_type #company_type{
+    position: relative;
+    width: 120px;
+    top: -23px;
+    left: 450px;
+    background-color: #C1CDCD;
+    color: #CD6600;
+    font-weight: bold;
+
+}
+
+#additional_text textarea{
+    margin-left: 10px;
+    color: #000000;
+    
+}
+
+#errors{
+		color:red;
+        top: -349px;
+        font-size:14px;
+	}
+    
+.vertical_section, #bd_email, #additional_text{
+    padding-top: 18px;
+}
+
+ .vertical_section #dropdown select{
+    max-width: 100px;
+    margin-left: 10px;
+}
+.vertical_section #dropdown .sub_content{
+    max-width: 80px !important;
+}
+
+.vertical_section, .account_type, .company_name, .company_status{
+    float: left;
+ }
+
+.query label{
+	font-size: 12px;
+	font-weight: bold;
+    color: #A1A1A1;
+}
+
+.query select{
+	margin-right: 10px;
+}
+
+.query{
+	height: 45px;
+    width: 75%;
+    border: 5px solid #CCCCCC;
+    margin-left: 100px;
+    margin-top: 15px;
+    padding-top: 20px;
+    background-color: #FFFFE0;
+    border-radius: 10px;
+}
+
+#display{
+    background-color:#E67600;
+    position: relative;
+    left: 437px;
+    top: -45px;
+    width: 70px;
+    color: #FFFFFF;
+    font-size: 12px;
+    border-radius: 10px;
+}
+
+
+
+/* only for firefox */
+
+@-moz-document url-prefix() {
+   .query #display_adv input, .query #display_pub input{
+    left: 500px;
+}
+
+#display{
+    position: relative;
+    left: 512px;
+    top: -40px;
+}
+table .matrix{
+    margin-left: 100px;
+    width: 200px;
+}
+
