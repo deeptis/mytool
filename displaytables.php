@@ -26,10 +26,10 @@ require_once 'connect.php';
 
 /* display to comapny table */
 if ($sub == 'all'){
-	 $sql_display = "select w.name from company w, subvertical s where w.company_type='$type' and s.name='$v' and w.company_id=s.fk__id order by w.name;";  
+	 $sql_display = "select w.name from company w, sub s where w.type='$type' and s.name='$v' and w.company_id=s.fk__id order by w.name;";  
 }
 else{
- $sql_display_company = "select w.company_name from win_company w, win_subvertical s where w.company_type='$comp_type' and s.vertical_name='$vertical' and s.subvertical_name='$sub' and w.company_id=s.fk_company_id order by w.company_name;
+ $sql_display = "select w.company_name from win_company w, win_s s where w.company_type='$comp_type' and s.name='$v' and s.su_name='$sub' and w.company_id=s.fk_company_id order by w.company_name;
  "; 
  }
  
