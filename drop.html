@@ -1,0 +1,84 @@
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.1.1.min.js"></script>
+</head>
+
+<body>
+
+<div class="mydropdown">
+	<div id="dropdown">
+  		<label for="xyz" >xyz</label>
+			<select id="id_xyz" name="xyz_id">
+							<option>--Select -</option>
+							  <option value="v1">op1</option>
+	  							<option value="v2">op2</option>
+		  				</select>
+		  				
+		  			<select id="v1" name="t1" style="display:none" class="sub_content"> 
+		  				<option>-Sub1-</option>
+						 <option>option2</option>
+						 <option>option3</option>
+						 <option>option4</option>
+		  			</select>
+		  			<select id="v2" name="t2" style="display:none" class="sub_content"> 
+		  				<option>-Sub2-</option>
+		  				<option>option1</option>
+						 <option>option2</option>
+						 <option>option3</option>
+						 <option>option4</option>
+		  			</select>
+		  			
+		  				<button class="add_button" id="add">Add </button>
+		  				<button class="remove_button" id="remove" style="display:none;">remove </button>
+		  			
+	</div>
+	</div>
+	
+	<script>
+	$(document).ready(function(){
+    $("#id_xyz").change(function(){
+        var v = $(this).find(':selected').val();
+        if (v){
+            var y = $(this).closest('#dropdown').find("#"+v);
+            y.siblings('.sub_content').addBack().hide();
+            y.show();
+        }else{
+            $(this).closest('#dropdown').find('.sub_content').hide();
+        }
+    });
+});
+$(document).ready(function(){
+        counter =1;
+    $("#add").click(function(e){
+    	counter++;
+        e.preventDefault();
+        var $newdiv = $('#dropdown').clone(true);
+        var newvert = $(document.createElement('div')).after("id", 'dropdown');
+        var $dropdown = $newdiv.find('[id^=id_xyz]');
+        var dropID = $('[id^=id_xyz]:last').attr('id');
+        var idNumber = dropID.replace('id_xyz', '');
+        $('div.mydropdown').append($newdiv);
+        $dropdown.attr('id', idNumber != '' ? 'id_xyz' + (parseInt(idNumber)+ 1) : 'id_xyz1')
+        $(".remove_button").show();
+       
+    });
+    $(".remove_button").click(function(e){
+    	counter--;
+    	if(counter > 0){
+        	$( e.target ).closest("#dropdown").remove();   
+        }
+        else{
+            alert("Please select an option!");
+        }
+    	
+    });
+});	
+
+		
+	
+	</script>
+	
+	</body>
+	
+	</html>
