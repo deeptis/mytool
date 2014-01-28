@@ -1,0 +1,81 @@
+body {
+	font-family: "Trebuchet MS", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	color: #666666;	
+}
+
+
+@media screen and (orientation:landscape) {
+	div.kvpair {
+		width: 430px;
+		height: 45px;
+		float: center;
+		min-height: 40px;
+	}
+	#key {
+		width: 160px;
+		height: 25px;
+		border: 1px solid #CCC;
+		float: left;
+		background-color: #ECECEC;
+		margin: 1px 5px;
+		padding: 5px;
+	}
+
+	#value {
+		width: 160px;
+		height: 25px;
+		border: 1px solid #CCC;
+		float: left;
+		background-color: #ECECEC;
+		margin: 1px 5px;
+		padding: 5px;
+	}
+}
+
+@media screen and (orientation:portrait) {
+	div.kvpair {
+		width: 290px;
+		height: 45px;
+		float: center;
+		min-height: 40px;
+	}
+	#key {
+		width: 100px;
+		height: 25px;
+		border: 1px solid #CCC;
+		float: left;
+		background-color: #ECECEC;
+		margin: 1px 5px;
+		padding: 5px;
+		color: #F00;
+	}
+
+	#value {
+		width: 100px;
+		height: 25px;
+		border: 1px solid #CCC;
+		float: left;
+		background-color: #ECECEC;
+		margin: 1px 5px;
+		padding: 5px;
+		color: #00F;
+	}
+}
+
+#key.entryform, #value.entryform {
+	background-color: #6B6B6B;
+}
+
+.entryformdatalabel {
+	color: #FFF;
+}
+
+#action {
+	width: 25px;
+	height: 25px;
+	float: left;
+	background-color: #FFCCCC;
+	margin: 0 5px;
+	padding: 5px;
+}
